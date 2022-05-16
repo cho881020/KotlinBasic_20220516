@@ -59,5 +59,39 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnCondition.setOnClickListener {
+
+//            1. if 문 테스트
+
+            val userAge = 18
+
+            if (userAge >= 20) {
+                Toast.makeText(this, "성인입니다.", Toast.LENGTH_SHORT).show()
+            }
+            else if (userAge >= 17) {
+                Toast.makeText(this, "고등학생입니다.", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                Toast.makeText(this, "중학생 이하 입니다.", Toast.LENGTH_SHORT).show()
+            }
+
+//            2. when 테스트
+
+            val num = 30
+
+            when (num) {
+
+                10 -> {
+                    Log.d("when테스트", "10인경우")
+                }
+                15 -> Log.d("when", "15인 경우 - 코드 한줄")
+                20, 30, 40 -> Log.d("when", "20,30,40 중 하나")
+                in 41..100 -> Log.d("when", "41~100 사이의 값")
+                else -> Log.d("when", "그 외의 모든 경우")
+
+            }
+
+        }
+
     }
 }

@@ -26,6 +26,11 @@
         android:layout_height="wrap_content"
         android:text="변수 문법 테스트용 버튼" />
 
+    <Button
+        android:id="@+id/btnCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="조건문 문법 테스트용 버튼" />
 
 
 </LinearLayout>
