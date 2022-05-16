@@ -93,5 +93,33 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnRepeat.setOnClickListener {
+
+//            1. 정석 - ArrayList 연계
+
+            val studentList = ArrayList<String>()
+            studentList.add("홍길동")
+            studentList.add("임꺽정")
+            studentList.add("장길산")
+
+
+            for ( name  in  studentList ) {
+                Log.d("정석for문", name)
+            }
+
+//            2. 0~4 , 0~5 직전 (자바식 for)
+
+            for (i in  0..4) {
+
+                Log.d("0~4", i.toString())
+            }
+
+            for (i  in   0 until 5) {
+                Log.d("0~5직전", i.toString())
+            }
+
+
+        }
+
     }
 }
