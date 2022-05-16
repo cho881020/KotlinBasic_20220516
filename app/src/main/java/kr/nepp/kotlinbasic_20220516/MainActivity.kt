@@ -36,5 +36,22 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnVariable.setOnClickListener {
+
+//            변수 문법 테스트
+
+            var name1 : String // 변수
+            val name2 : String // 상수
+
+//            최초 대입은 val / var 둘다 가능
+            name1 = "김철수"
+            name2 = "안영희"
+
+            name1 = "이철수"  // var : 다시 대입 가능
+//            name2 = "정영희"  // val : 상수이므로 변경 불가
+
+
+        }
+
     }
 }
