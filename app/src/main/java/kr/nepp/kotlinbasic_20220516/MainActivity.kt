@@ -51,6 +51,12 @@ class MainActivity : AppCompatActivity() {
 //            name2 = "정영희"  // val : 상수이므로 변경 불가
 
 
+//            변수 초기화 테스트 (정석 방법)
+
+            val year1 = 1998 // year1은 Int로 자동 설정.
+//            year1 = "천구백구십팔"  // 설정된 자료형은 계속 유지. (자료형 안맞아서 대입 불가)
+
+
         }
 
     }
